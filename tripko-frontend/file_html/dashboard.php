@@ -77,9 +77,9 @@ if (!isset($_SESSION['user_id']) || $_SESSION['user_type_id'] != 1) {
             <a href="#" class="nav-link">
               <i class="fas fa-cog text-white text-lg"></i> Settings
             </a>
-            <a href="../../tripko-backend/logout.php" class="nav-link">
+            <a href="../../tripko-backend/confirm_logout.php" class="nav-link">
               <i class="fas fa-sign-out-alt text-white text-lg"></i> Sign Out
-          </a>
+            </a>
           </nav>
         </div>
         <div class="flex items-center gap-3 font-semibold">

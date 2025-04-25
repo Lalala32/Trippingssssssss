@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login/Signup Form</title>
-    <link rel="stylesheet" href="../file css/SignUp_LogIn_Form.css">
+    <link rel="stylesheet" href="../file_css/SignUp_LogIn_Form.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
@@ -72,6 +72,6 @@
         </div>
     </div>
     
-    <script src="../file js/SignUp_LogIn_Form.js"></script>
+    <script src="../file_js/SignUp_LogIn_Form.js"></script>
 </body>
 </html>
