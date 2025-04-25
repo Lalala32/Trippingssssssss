@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TripKo Pangasinan - Transportation Types</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../file css/dashboard.css" />
+</head>
+<body class="bg-white text-gray-900">
+  <div class="flex min-h-screen">
+    <!-- Copy the entire sidebar code here -->
+    <!-- ...existing sidebar code... -->
+
+    <!-- Main content -->
+    <main class="flex-1 bg-[#F3F1E7] p-6">
+      <header class="flex items-center justify-between mb-6">
+        <div class="flex items-center gap-3 text-gray-900 font-normal text-base">
+          <button aria-label="Menu" class="focus:outline-none">
+            <i class="fas fa-bars text-lg"></i>
+          </button>
+          <span>Transportation Types</span>
+        </div>
+        <div class="flex items-center gap-4">
+          <div>
+            <input type="search" placeholder="Search" class="w-48 md:w-64 rounded-full border border-gray-400 bg-[#F3F1E7] py-1.5 px-4 text-gray-600 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#255D8A]" />
+          </div>
+          <button aria-label="Notifications" class="text-black text-xl focus:outline-none">
+            <i class="fas fa-bell"></i>
+          </button>
+        </div>
+      </header>
+
+      <!-- Transportation Types Section -->
+      <section>
+        <div class="mb-8">
+          <div class="flex justify-between items-center mb-4">
+            <h2 class="font-semibold text-xl">Transportation Types</h2>
+            <button onclick="openVehicleModal()" class="bg-[#255D8A] text-white px-4 py-2 rounded-md hover:bg-[#1e4d70] transition-colors">
+              + Add Vehicle
+            </button>
+          </div>
+          <!-- Copy the vehicle table here -->
+          <!-- ...existing vehicle table code... -->
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Copy the vehicle modal here -->
+  <!-- ...existing vehicle modal code... -->
+
+  <!-- Copy the relevant JavaScript functions -->
+  <script>
+    // ...existing modal and form handling functions for vehicles only...
+  </script>
+</body>
+</html>

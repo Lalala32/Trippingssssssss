@@ -1,0 +1,412 @@
+body {
+    font-family: 'Merriweather', serif;
+  }
+  
+  .nav-link {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem 1rem;
+    border-left: 4px solid transparent;
+    border-radius: 0.375rem;
+    transition: all 0.2s;
+  }
+  
+  .nav-link:hover {
+    background-color: #1e4d70;
+    border-left-color: #F7941D;
+  }
+  
+    .nav-link.active {
+        background-color: #3B7DBF;
+        border-left-color: #F7941D;
+    }
+
+/* Add these styles for the dropdown */
+#transportDropdown .nav-link {
+  font-size: 0.875rem;
+  padding-left: 0.75rem;
+}
+
+#transportDropdownIcon {
+  transition: transform 0.2s ease;
+}
+
+/* Add New Spot Form Styles */
+.form-container {
+  max-width: 800px;
+  width: 100%;
+  padding: 2rem;
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+  
+  /* Add styles for close button hover effect */
+  .form-container button[type="button"]:hover {
+    opacity: 0.8;
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+}
+  
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+
+}.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+  
+  .form-row .form-group {
+    flex: 1;
+  }
+  
+  .required {
+    color: red;
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  textarea,
+  select {
+    padding: 0.6rem;
+    border: 1px solid #255D8A;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: 0.3s;
+  }
+  
+  input[type="text"]:focus,
+  input[type="date"]:focus,
+  textarea:focus,
+  select:focus {
+    border-color: #1e4d70;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(37, 93, 138, 0.1);
+  }
+  
+  .upload-area {
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    padding: 2rem;
+    position: relative;
+    background-color: #fafafa;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .btn {
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    margin-left: 0.5rem;
+    cursor: pointer;
+    transition: opacity 0.2s;
+  }
+  
+  .btn.cancel {
+    background-color: #e0e0e0;
+    color: #333;
+  }
+  
+  .btn.save {
+    background-color: #255D8A;
+    color: white;
+  }
+  
+  .btn:hover {
+    opacity: 0.9;
+  }
+
+/* Itinerary Form Styles */
+.form-container {
+  background: #fff;
+  padding: 2rem;
+  width: 100%;
+  max-width: 700px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  border-radius: 8px;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.required {
+  color: red;
+}
+
+.optional {
+  color: #666;
+  font-size: 0.9em;
+}
+
+input[type="text"],
+textarea,
+select {
+  padding: 0.6rem;
+  border: 1px solid #255D8A;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: 0.3s;
+  font-family: 'Merriweather', serif;
+}
+
+.upload-area {
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  padding: 2rem;
+  position: relative;
+  background-color: #fafafa;
+  cursor: pointer;
+  text-align: center;
+}
+
+.upload-area i {
+  font-size: 2rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.btn {
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  font-family: 'Merriweather', serif;
+}
+
+.btn.cancel {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.btn.save {
+  background-color: #255D8A;
+  color: white;
+}
+
+/* Transportation Form Styles */
+.form-container {
+  background: #fff;
+  padding: 2rem;
+  width: 100%;
+  max-width: 700px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  border-radius: 8px;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"] {
+  padding: 0.6rem;
+  border: 1px solid #255D8A;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #1e4d70;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(37, 93, 138, 0.1);
+}
+
+.btn {
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  font-family: 'Merriweather', serif;
+}
+
+.btn.cancel {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.btn.save {
+  background-color: #255D8A;
+  color: white;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* Fare Form Styles */
+.form-container {
+  background: #fff;
+  padding: 2rem;
+  width: 100%;
+  max-width: 700px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  border-radius: 8px;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.required {
+  color: red;
+}
+
+textarea,
+select {
+  padding: 0.6rem;
+  border: 1px solid #255D8A;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: 0.3s;
+  font-family: 'Merriweather', serif;
+}
+
+textarea:focus,
+select:focus {
+  border-color: #1e4d70;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(37, 93, 138, 0.1);
+}
+
+.btn {
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  font-family: 'Merriweather', serif;
+}
+
+.btn.cancel {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.btn.save {
+  background-color: #255D8A;
+  color: white;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* Tourist Spot Form Styles */
+.upload-area {
+    border: 2px dashed #255D8A;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.upload-area:hover {
+    background-color: rgba(37, 93, 138, 0.05);
+}
+
+.upload-area i {
+    font-size: 2rem;
+    color: #255D8A;
+    margin-bottom: 0.5rem;
+}
+
+.upload-area p {
+    margin: 0;
+    font-weight: 500;
+}
+
+.upload-area span {
+    font-size: 0.875rem;
+    color: #666;
+}
+
+.upload-area input[type="file"] {
+    display: none;
+}
+
+.line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Add these styles */
+.placeholder-image {
+    background-color: #f3f4f6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #9ca3af;
+    height: 100%;
+    width: 100%;
+}
+
+.placeholder-image i {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.placeholder-image span {
+    font-size: 0.875rem;
+}
+
+select[name="town_id"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.375rem;
+    background-color: white;
+    appearance: auto;
+}
